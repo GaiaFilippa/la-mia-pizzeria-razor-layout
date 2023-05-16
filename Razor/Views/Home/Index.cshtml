@@ -25,8 +25,18 @@
         Stampare dentro uno span il risultato.
 
         @{
-          
+            int SumFromOneToN(int n)
+            {
+                int sum = 0;
+                for (int i = 1; i <= n; i++)
+                {
+                    sum += i;
+                }
+                return sum;
+            }
         }
+
+        <span>@SumFromOneToN(5)</span>
 
         3. Contare quante volte la lettera a è presente nalla frase "nel mezzo del cammin di nostra vita" e stampare questo valore in pagina
 
@@ -91,5 +101,7 @@
             <p>@System.DateTime.Now.DayOfWeek.ToString()</p>
 
             c. che giorno della settimana sarà nello stesso giorno e mese di oggi ma tra un anno (il risultato dovrà essere il nome del giorno (Lunedì, Martedì, ...)Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.<br />
-        <p> @DateTime.Now.AddYears(1).DayOfWeek</p>
+            <p>@DateTime.Now.AddYears(1).DayOfWeek</p>
+
+ 
 </div>
